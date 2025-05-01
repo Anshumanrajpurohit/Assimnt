@@ -1,0 +1,26 @@
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Banner script loaded");
+  const container = document.querySelector(".banner-container");
+  const slides = document.querySelectorAll(".banner-image");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const offset = -index * 100;
+    console.log(`Showing slide ${index}, offset: ${offset}%`); // Debugging aid
+    container.style.transform = `translateX(${offset}%)`;
+  }
+
+  window.nextSlide = function () {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  };
+
+  window.prevSlide = function () {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  };
+
+  // Initial display
+  showSlide(currentIndex);
+  setInterval(window.nextSlide, 8000); // Change slide every 8 seconds
+});

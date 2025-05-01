@@ -1,0 +1,449 @@
+@import url('global.css');
+
+/* ----------------------------------
+   [1] Hero Section
+---------------------------------- */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height for a strong impact */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Primary Button Style */
+.btn.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ----------------------------------
+   [2] Section Header (Shared)
+---------------------------------- */
+.section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.section-header p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ----------------------------------
+   [3] Featured Courses Section
+---------------------------------- */
+.featured-courses-section {
+    background: rgba(252, 243, 209, 0.6);
+    padding: 1.25rem 0rem;
+    position: relative;
+}
+
+/* ----------------------------------
+   [4] Featured Lessons Section
+---------------------------------- */
+.featured-lesson-section {
+    background: #fafafa;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+/* ----------------------------------
+   [5] Carousel Wrapper & Carousel
+---------------------------------- */
+.courses-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.courses-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    width: 100%;
+    transform: translateX(0);
+}
+
+/* ----------------------------------
+   [6] Course Card (Single-Item Carousel)
+---------------------------------- */
+.course-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(240, 240, 240, 0.5);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ----------------------------------
+   [7] Course Thumbnail
+---------------------------------- */
+.course-thumbnail {
+    flex: 0 0 400px; /* Fixed width; remember to include px */
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.course-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover .course-thumbnail img {
+    transform: scale(1.05);
+}
+
+/* ----------------------------------
+   [8] Course Info
+---------------------------------- */
+.course-info {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.course-title a {
+    font-family: var(--font-text);
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.course-title a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.lesson-meta {
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.lesson-meta .course-name,
+.lesson-meta .topic-name {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.lesson-meta span {
+    display: inline-block;
+}
+
+.course-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+.course-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: auto;
+    transition: color 0.3s ease;
+}
+
+.course-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* ----------------------------------
+   [9] Unified Navigation Arrows
+   (Used for Banner & Carousel)
+---------------------------------- */
+.prev, .next,
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Unified background color and style */
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    color: #0c0c0c;
+    font-size: 2rem; /* Merged common size (24px ≈ 1.5rem). Adjust as needed. */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover effect for all arrow types */
+.prev:hover, .next:hover,
+.carousel-btn:hover {
+    background-color: #c6c6c6;
+}
+
+/* Distinguish left & right for carousel arrows */
+.prev-btn {
+    left: 1rem;
+}
+
+.next-btn {
+    right: 1rem;
+}
+
+/* Distinguish left & right for banner arrows */
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+/* ----------------------------------
+   [10] Banner Styles
+---------------------------------- */
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;  /* Adjust as needed */
+    width: 100%;
+}
+
+.banner-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;  /* match banner height */
+}
+
+.banner-image {
+    min-width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Notice: background-size: cover was changed to .contain in original code;
+       we keep it as is to not remove any design. */
+    background-size: contain;
+}
+
+/* (Removed separate .prev, .next styles since they
+   are unified under [9] above) */
+
+/* ----------------------------------
+   [11] Responsive Adjustments
+---------------------------------- */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .course-title a {
+        font-size: 2rem;
+    }
+
+    .course-description {
+        font-size: 14px;
+    }
+
+    .course-link {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-section {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Hide arrow buttons; use swipe/scroll on smaller screens */
+    .carousel-btn,
+    .prev,
+    .next {
+        display: none;
+    }
+
+    .courses-carousel {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .course-card {
+        scroll-snap-align: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .course-thumbnail {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .course-info {
+        text-align: center;
+        align-items: center;
+    }
+
+    .course-title a {
+        font-size: 1.8rem;
+    }
+
+    .course-description {
+        display: none;
+    }
+
+    .course-link {
+        font-size: 16px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-header p {
+        font-size: 18px;
+    }
+
+    .lesson-meta {
+        font-size: 1rem;
+    }
+
+    /* Banner height on mobile */
+    .banner {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .course-title a {
+        font-size: 1.5rem;
+    }
+
+    .course-link {
+        font-size: 14px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-header p {
+        font-size: 16px;
+    }
+
+    .lesson-meta {
+        font-size: 0.8rem;
+    }
+}

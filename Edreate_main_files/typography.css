@@ -1,0 +1,76 @@
+@import url('global.css');
+
+/* Headings */
+h1,
+h2,
+h3 {
+    font-family: var(--font-text);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+h4,
+h5,
+h6 {
+    font-family: var(--font-text);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-size: var(--h4-size);
+}
+
+h5 {
+    font-size: var(--h5-size);
+}
+
+h6 {
+    font-size: var(--h6-size);
+}
+
+/* Subtitle */
+.subtitle {
+    font-family: var(--font-text);
+    font-weight: 500;
+    /* Medium weight */
+    font-size: var(--subtitle-size);
+    color: var(--secondary-color);
+}
+
+/* Paragraph */
+p {
+    font-family: var(--font-text);
+    font-weight: 400;
+    /* Regular weight */
+    font-size: var(--paragraph-size);
+    color: var(--secondary-color);
+}
+
+/* Link */
+a {
+    font-family: var(--font-text);
+    font-weight: 600;
+    /* SemiBold weight */
+    font-size: var(--link-size);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color-purple);
+    /* Optional hover state */
+    text-decoration: underline;
+}

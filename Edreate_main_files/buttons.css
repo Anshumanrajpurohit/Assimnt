@@ -1,0 +1,43 @@
+@import url('global.css');
+
+/* Custom Button Styles */
+.btn-custom {
+    font-family: var(--font-text);
+    font-weight: 600;
+    /* SemiBold weight */
+    font-size: var(--button-size);
+    color: var(--text-color-white);
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--accent-color-purple);
+    color: var(--text-color-black);
+}
+
+.btn-outline-custom {
+    font-family: var(--font-text);
+    font-weight: 600;
+    /* SemiBold weight */
+    font-size: var(--button-size);
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding: 7.5px 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-white);
+}
+

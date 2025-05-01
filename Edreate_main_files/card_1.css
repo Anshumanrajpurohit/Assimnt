@@ -1,0 +1,196 @@
+
+        .card-contianer {
+            display: flex;
+            perspective: 800px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border: none;
+            background-color: rgb(253, 248,227);
+            justify-content: space-evenly;
+        }
+
+        .card {
+            border: none;
+            perspective: 800px;
+            border-radius: 5px;
+            background-color: rgb(253, 248,227);
+            width: 450px;
+            height: 610px;
+            position: relative;
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            cursor: pointer;
+        }
+
+
+        .card-inner {
+
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backface-visibility: hidden;
+            border-radius: 5px;
+        }
+
+        .front {
+            text-align: center;
+            font-size: 30px;
+            overflow: hidden;
+            color: #ada2a2;
+            font-family: "Rowdies", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            
+            background-color: rgb(238, 230, 199);
+        }
+
+        .back {
+            padding: 20px 20px 20px 20px;
+         
+            background-color: rgb(244, 238, 216);
+            transform: rotateY(180deg);
+            flex-direction: column;
+        }
+
+        .back h2 {
+            font-size: 40px;
+            color: #333;
+            padding-bottom: 15px;
+        }
+
+        #heading {
+            background: linear-gradient(to right, rgb(240, 213, 116), #353535);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        p {
+            font-family: "Bona Nova SC", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: medium;
+            color: #333;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        pre {
+            font-family: "Bona Nova SC", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: medium;
+            color: #333;
+            display: flex;
+            margin-top: 10px;
+            margin-left: 62%;
+            margin-bottom: 10px;
+            padding: 5px 5px 5px 5px;
+
+        }
+
+        pre:hover {  
+             background-color: rgb(241, 219, 140);
+            border-radius: 5px;
+            cursor: pointer;
+            color: #000000;
+            font-style: bold;
+        }
+
+        h4 {
+            font-family: "Bona Nova SC", serif;
+            font-size: 30px;
+            padding: 20px 20px 20px 20px;
+            text-align: center;
+            justify-content: center;
+            font-weight: 200;
+            font-style: bold;
+        }
+
+        h5 {
+            font-family: "Bona Nova SC", serif;
+            font-size: 22px;
+            text-align: center;
+            justify-content: center;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .card-contianer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 10px;
+            }
+        
+            .card {
+                width: 90%;
+                height: auto;
+                margin-bottom: 10%;
+                width: 450px;
+                height: 610px;
+                margin-left: 10px;
+               
+            }
+
+            .front h2{
+                margin-top: 50%;
+            }
+        
+            .back, .front {
+                height: 600px;
+                width: 100%;
+                padding: 20px;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+            }
+        
+            .back h2 {
+                font-size: 28px;
+            }
+        
+            #heading {
+                font-size: 26px;
+            }
+        
+            p {
+                font-size: 16px;
+                text-align: left;
+            }
+        
+            pre {
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                font-size: 14px;
+            }
+        
+            h4 {
+                font-size: 24px;
+            }
+        
+            h5 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+        

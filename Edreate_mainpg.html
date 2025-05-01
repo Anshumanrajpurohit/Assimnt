@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Edreate_main_files/footer.css">
+    <link rel="stylesheet" href="./Edreate_main_files/card_1.css">
+    <link rel="stylesheet" href="./Edreate_main_files/leson_card.css">
+    <link rel="stylesheet" href="./Edreate_main_files/navbar.css">
+    <title>Card Flip</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+    nav class="navbar custom-navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="mainNavbar" aria-labelledby="mainNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mainNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+  
+          <form class="d-flex mt-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    
+  <section>  
+    <div>
+        <!--   using here the h4 and similar like other to just avoid the use of miultiple heading tags (because if not seen properly they  migth confict the proeprties)-->
+        <h4><strong>Featured Courses</strong></h4><br>
+        <h5>Check out our top courses to get started on your learning journey</h5>
+    </div>
+    <div class="card-contianer">
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <!--    <img src="" alt="front-img" >         -->
+                    <h2 id="heading">Reinforcement <br>Learning</h2>
+                </div>
+                <div class="back">
+                    <h2 id="heading">Deep Reinforcement Learning</h2>
+                    <p>Dive into RL with this comprehensive course, covering fundamentals where agents learn and
+                        improve, up to advanced techniques like Deep Q-Learning (DQN), Proximal Policy Optimization
+                        (PPO), and Actor-Critic models. Understand not just the "how" but also the "why" behind these
+                        methods.
+
+                        Gain hands-on experience using PyTorch to build agents that can master games, navigate
+                        environments, and handle real-time challenges such as balancing poles and landing lunar modules.
+                        By the end, you'll be equipped to design, enhance, and deploy your own intelligent agents
+                        confidently.</p>
+                    <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <!--    <img src="" alt="front-img" >         -->
+                    <h2 id="heading">ROS2<br>Introduction</h2>
+                </div>
+                <div class="back">
+                    <h2 id="heading">Introduction to ROS2</h2>
+                    <p>
+                        Welcome to ROS2: Advanced Robotics Framework!
+
+                        Master ROS2's real-time capabilities, robust communication, and advanced features like action
+                        servers and lifecycle management through hands-on projects.
+
+                        This course equips you to build and manage complex robotic systems using C++ and Python, paving
+                        the way for innovation in modern robotics.</p>
+                    <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- <div>
+        <h4><strong>Featured Lessons</strong><br>
+        Check out our top courses to get started on your learning journey</h4>
+    </div>
+    <div class="main-2">
+      <div class="card-group">
+      <div class="card-contianer-2">
+        <div class="front-card-marquee">
+            <h2 class="hx">Lesson thumbnail</h2>
+        </div>
+        <div class="back-card-marquee">
+            <h5 class="ax" ><span id="cls-1">What Exactly Is Reinforcement Learning?</span><br>
+                <strong><span id="cls-2">Deep Reinforcement Learning | Introduction to Reinforcement Learning</span></strong><br>
+                
+                <span id="cls-3">Please add thumbnail description <br></span>
+                
+                <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+        </div>
+      </div>
+      </div>
+    </div> -->
+
+
+    <div>
+        <!--   using here the h4 and similar like other to just avoid the use of miultiple heading tags (because if not seen properly they  migth confict the proeprties)-->
+        <h4><strong>Featured Courses</strong></h4><br>
+        <h5>Check out our top courses to get started on your learning journey</h5>
+    </div>
+
+    <marquee behavior="scroll" scrollamount="20" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+
+        <div id="cd-grp">
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">What Exactly Is Reinforcement <br>Learning?</h2>
+                        <p id="cd-p">Dive into RL with this comprehensive course, covering fundamentals where agents
+                            <br>
+                            learn and improve, up to advanced techniques like Deep Q-Learning (DQN),<br> Proximal Policy
+                            Optimization (PPO), and Actor-Critic models. Understand not just<br> the "how" but also the
+                            "why"behind these methods.
+                            Gain hands-on experience using <br>PyTorch to build agentsthat can master games, navigate
+                            environments, and handle <br> real-time challenges such as balancing polesand landing lunar
+                            modules. By the end, <br> you'll be equipped to design, enhance, and deployyour own
+                            intelligent
+                            agents confidently.
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">Deep Reinforcement Learning</h2>
+                        <p id="cd-p">Dive into RL with this comprehensive course, covering fundamentals where agents
+                            <br>
+                            learn and improve, up to advanced techniques like Deep Q-Learning (DQN),<br> Proximal Policy
+                            Optimization (PPO), and Actor-Critic models. Understand not just<br> the "how" but also the
+                            "why"behind these methods.
+                            Gain hands-on experience using <br>PyTorch to build agentsthat can master games, navigate
+                            environments, and handle <br> real-time challenges such as balancing polesand landing lunar
+                            modules. By the end, <br> you'll be equipped to design, enhance, and deployyour own
+                            intelligent
+                            agents confidently.
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">Deep Reinforcement Learning</h2>
+                        <p id="cd-p">Dive into RL with this comprehensive course, covering fundamentals where agents
+                            <br>
+                            learn and improve, up to advanced techniques like Deep Q-Learning (DQN),<br> Proximal Policy
+                            Optimization (PPO), and Actor-Critic models. Understand not just<br> the "how" but also the
+                            "why"behind these methods.
+                            Gain hands-on experience using <br>PyTorch to build agentsthat can master games, navigate
+                            environments, and handle <br> real-time challenges such as balancing polesand landing lunar
+                            modules. By the end, <br> you'll be equipped to design, enhance, and deployyour own
+                            intelligent
+                            agents confidently.
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">Deep Reinforcement Learning</h2>
+                        <p id="cd-p">Deep Reinforcement Learning | Introduction to Reinforcement Learning <br>
+
+                            Please add thumbnail description
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">The Rise of Machines — Why Reinforcement <br>Learning Matters</h2>
+                        <p id="cd-p">Deep Reinforcement Learning | Introduction to Reinforcement Learning <br>
+
+                            Please add thumbnail description
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">
+                            alpaca: Edreate Robot</h2>
+                        <p id="cd-p">Introduction to ROS2 | Introduction to <br> ROS2 Core Concepts <br>
+
+                            Please add thumbnail description
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">Soft Actor Critic Algorithm <br>explained with Lunar Lander</h2>
+                        <p id="cd-p">Deep Reinforcement Learning | Advanced Off-Policy Methods <br>
+
+                            Please add thumbnail description
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">Deep Reinforcement Learning</h2>
+                        <p id="cd-p">Dive into RL with this comprehensive course, covering fundamentals where agents
+                            <br>
+                            learn and improve, up to advanced techniques like Deep Q-Learning (DQN),<br> Proximal Policy
+                            Optimization (PPO), and Actor-Critic models. Understand not just<br> the "how" but also the
+                            "why"behind these methods.
+                            Gain hands-on experience using <br>PyTorch to build agentsthat can master games, navigate
+                            environments, and handle <br> real-time challenges such as balancing polesand landing lunar
+                            modules. By the end, <br> you'll be equipped to design, enhance, and deployyour own
+                            intelligent
+                            agents confidently.
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">Deep Reinforcement Learning</h2>
+                        <p id="cd-p">Dive into RL with this comprehensive course, covering fundamentals where agents
+                            <br>
+                            learn and improve, up to advanced techniques like Deep Q-Learning (DQN),<br> Proximal Policy
+                            Optimization (PPO), and Actor-Critic models. Understand not just<br> the "how" but also the
+                            "why"behind these methods.
+                            Gain hands-on experience using <br>PyTorch to build agentsthat can master games, navigate
+                            environments, and handle <br> real-time challenges such as balancing polesand landing lunar
+                            modules. By the end, <br> you'll be equipped to design, enhance, and deployyour own
+                            intelligent
+                            agents confidently.
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cd">
+                <div class="card-inner" id="cd-inr">
+                    <div class="front" id="cd-f">
+                        <!--    <img src="" alt="front-img" >         -->
+                        <h2 id="heading">Lesson <br> thumbnail</h2>
+                    </div>
+                    <div class="back" id="cd-b">
+                        <h2 id="heading">Deep Reinforcement Learning</h2>
+                        <p id="cd-p">Dive into RL with this comprehensive course, covering fundamentals where agents
+                            <br>
+                            learn and improve, up to advanced techniques like Deep Q-Learning (DQN),<br> Proximal Policy
+                            Optimization (PPO), and Actor-Critic models. Understand not just<br> the "how" but also the
+                            "why"behind these methods.
+                            Gain hands-on experience using <br>PyTorch to build agentsthat can master games, navigate
+                            environments, and handle <br> real-time challenges such as balancing polesand landing lunar
+                            modules. By the end, <br> you'll be equipped to design, enhance, and deployyour own
+                            intelligent
+                            agents confidently.
+                        </p><br>
+                        <pre>Learn.More..<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="14px" fill="#1f1f1f"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg></pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </marquee>
+
+
+
+
+
+    <!--      Footer       -->
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-section company-info">
+            <div class="edreate-logo-footer">
+                <img src="./Edreate_main_files/edreate-logo-transparent-background.webp" alt="Edreate Logo"
+                    class="footer-logo" width="200" height="125">
+            </div>
+        </div>
+        <div class="footer-content">
+
+
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="icon-email"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                        data-cfemail="d1b4b5a3b4b0a5b4ffa2beb2b8b0bd91b6bcb0b8bdffb2bebc">edreate.social@gmail.com</a>
+                </p>
+            </div>
+
+            <div class="footer-section connect-and-subscribe">
+                <div class="social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/edreate" class="social-icon" target="_blank" aria-label="GitHub">
+                            <img src="/Edreate_main_files/github.png" alt="GitHub" width="30" height="30">
+                        </a>
+                        <a href="https://www.youtube.com/@edreate" class="social-icon" target="_blank"
+                            aria-label="YouTube">
+                            <img src="/Edreate_main_files/youtube.png" alt="YouTube" width="30"
+                                height="30">
+                        </a>
+                        <a href="https://www.linkedin.com/company/edreate" class="social-icon" target="_blank"
+                            aria-label="LinkedIn">
+                            <img src="/Edreate_main_files/linkedin.png" alt="LinkedIn" width="30"
+                                height="30">
+                        </a>
+                        <a href="https://www.instagram.com/edreate_" class="social-icon" target="_blank"
+                            aria-label="Instagram">
+                            <img src="/Edreate_main_files/instagram.png" alt="Instagram" width="30"
+                                height="30">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2024 Edreate. All rights reserved.     |  
+
+                <div class="legal-links">
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
